@@ -6,40 +6,96 @@
   <title>WDD 131 – Dynamic Web Fundamentals – Your Name"</title>
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Dylan Henry, The Home page for my WDD 131 class work. Including a short bio and helpful links and resources.">
   <meta name="author" content="Dylan Henry">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
 </head>
+
+
 <body>
   <header>
     <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-    <nav>
+  </header>
+  <nav>
         <a href="https://www.linkedin.com/in/dylan-henry-39b42b153/">LinkedIn</a>
         <a href="https://byupw.instructure.com/">Canvas</a>
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
         <a href="#">Final Project</a>
   </nav>
-  </header>
 
 
     <main>
-        <h1>Dylan Henry</h1>
+        <h1>Dylan A. Henry</h1>
+        <div class="cards">
+        
+            <section class="card">
+                <!-- inlcude a heading images and content as shown in the example -->
+                <h2>Dylan Henry</h2> 
+                <div class="card-body">
+                  <img class="portrait" src="images/profile.jpg" alt="Dylan Henry" width="150px"> <!-- Portrait of me -->
+                  <p class="about-me">My name is Dylan Henry. I was born in Santa Maria, California
+                    and currently live in Highland Utah. I have been working as a Software Engineer in Test
+                    for the last 10 years at a few different companies, namely MicroFocus, Sorenson Communications,
+                     CompTIA, and now Optilogic. I love my work and enjoy learning new things! I look forward to
+                     completing the material in this course and adding it to my skillset.
+                  </p>
+                  <p class="about-place">
+                    <h3>Alpine, Utah</h3>
+                    <figure>
+                      <img class="flag" src="images/Flag_of_Utah.svg.webp" alt="The flag of the State of Utah" width="200px">
+                      <figcaption>Official flag of Utah</figcaption>
+                    </figure>
+                    
+                    Alpine, Utah, is a small city of about 10,500 residents in northern Utah County.
+                    Set on the foothills of the Wasatch Mountain Range just north of Highland and 
+                    American Fork. It was settled by LDS Pioneers and originally named "Mountainville",
+                    but later renamed to Alpine because it reminded settlers of the Swiss Alps.
+                  </p>
+                  
+                 </div>
+            </section>
 
-        <section class="card">
-            <!-- inlcude a heading images and content as shown in the example -->
 
-        </section>
+            <section class="card">
+                <!-- include a heading images and content as shown in the example -->
+                 <h2>Web Dev Resources</h2>
+                 <div class="card-body">
+                  <ul class="resources">
+                    <li>
+                      <a href="">link1</a>
+                    </li>
+                    <li>
+                      <a href="">link2</a>
+                    </li>
+                    <li>
+                      <a href="">link3</a>
+                    </li>
+                    <li>
+                      <a href="">link4</a>
+                    </li>
+                    <li>
+                      <a href="">link5</a>
+                    </li>
+                    <li>
+                      <a href="">link6</a>
+                    </li>
+                  </ul>
 
-        <section class="card">
-            <!-- include a heading images and content as shown in the example -->
-        </section>
+                 </div>
+            </section>
+        </div>
+
     </main>
 
 
   <footer>
     <p>©
         <span id="currentyear"></span>
-        Dylan Henry Utah, USA
+        Dylan Henry, Utah, USA
     </p>
     <p id="lastModified"></p>
   </footer>
+  <script src="scripts/getdates.js"></script>
 </body>
 </html>
