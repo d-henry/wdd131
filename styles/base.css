@@ -20,8 +20,12 @@ header {
     background-color: var(--primary);
     color: var(--light);
     text-align: center;
-    padding: 1rem;
     font-family: var(--heading-font);
+}
+
+#course-title {
+    display: block;
+    padding: 1rem;
 }
 
 nav {
@@ -35,6 +39,11 @@ nav a {
     text-decoration: none;
     font-family: var(--heading-font);
     padding: 0.6rem 1rem;
+}
+
+nav a:hover {
+    color: gold;
+    text-decoration: underline;
 }
 
 main {
