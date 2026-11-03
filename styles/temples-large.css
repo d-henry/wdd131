@@ -1,0 +1,30 @@
+@media only screen and (min-width: 512px) {
+
+    main {
+    max-width: 100%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    header nav {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+
+    header nav a {
+        display: block;
+        padding: 1rem;
+    }
+}
