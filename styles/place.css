@@ -1,0 +1,32 @@
+:root {
+  --swiss-red: #DA291C;
+  --white: #FFFFFF;
+  --black: #000000;
+  --font-main: Arial, Helvetica, sans-serif
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--black);
+  background-color: var(--white);
+}
+
+header, footer {
+  background-color: var(--swiss-red);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--swiss-red);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switzerland</title>
+    <meta name="description" content="Facts about the country of Switzerland and its weather">
+    <meta name="author" content="Dylan Henry">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <header>Switzerland</header>
+    <main>
+        <picture>
+            <source media="(min-width: 700px)" srcset="images/swtzerland-landscape-wide.webp">
+            <img src="images/switzerland-church-small.webp" alt="Mountain Scenery in Switzerland">
+        </picture>
+        <section>
+            <h2>Data</h2>
+            <dl>
+                <dt>Area</dt><dd>41,285 km²</dd>
+                <dt>Population</dt><dd>9,000,000</dd>
+                <dt>Capital</dt><dd>Bern</dd>
+                <dt>Languages</dt><dd>German, French, Italian, Romansh</dd>
+                <dt>Currency</dt><dd>Swiss franc (CHF)</dd>
+                <dt>Time Zone</dt><dd>UTC+1</dd>
+                <dt>Calling Code</dt><dd>+41</dd>
+                <dt>Internet TLD</dt><dd>.ch</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <img src="images/partly-cloudy.svg" alt="Partly cloudy icon" width="64" height="64" class="weather-icon">
+            <dl>
+                <dt>Temperature</dt><dd>5 °C</dd>
+                <dt>Conditions</dt><dd>Partly Cloudy</dd>
+                <dt>Wind</dt><dd>10 km/h</dd>
+                <dt>Wind Chill</dt><dd id="windchill">N/A</dd>
+            </dl>
+        </section>
+
+    </main>
+    <footer>        <p>©
+        <span id="currentyear"></span>
+        Dylan Henry, Utah, USA
+    </p>
+    <p id="lastModified"></p></footer>
+    <p>Photos by Peter Steiner and Sergey Guk</p>
+</body>
+</html>
