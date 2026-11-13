@@ -30,3 +30,68 @@ section {
   padding: 1rem;
   border: 1px solid var(--swiss-red);
 }
+
+section h2 {
+    text-align: center;
+}
+
+.weather-icon {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0;
+}
+
+@media (min-width: 700px) {
+  main {
+    position: relative;
+  }
+
+  section {
+    position: absolute;
+    width: 300px;
+    margin: 0;
+    background-color: var(--white);
+  }
+
+  picture img {
+  height: 85vh;
+  object-fit: cover;
+}
+
+  .data {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .weather {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .weather h2 {
+    text-align: left;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
+
