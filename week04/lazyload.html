@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+    <meta name="description" content="An example page showing 6 random photos that are loaded lazily.">
+    <meta name="author" content="Dylan Henry">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <h1>Lazy Loading Demo</h1>
+        <picture><img src="https://placekittens.com/400/600" alt="Placeholder Kitten Image" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture><img src="https://placekittens.com/400/700" alt="Placeholder Kitten Image" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://placekittens.com/400/800" alt="Placeholder Kitten Image" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://placekittens.com/400/650" alt="Placeholder Kitten Image" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://placekittens.com/400/70" alt="Placeholder Kitten Image" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://placekittens.com/400/600" alt="Placeholder Kitten Image" loading="lazy" width="400"
+                height="600"></picture>
+    </main>
+    <footer>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <p>©
+        <span id="currentyear"></span>
+        Dylan Henry, Utah, USA
+    </p>
+    <p id="lastModified"></p>
+</body>
+
+</html>
