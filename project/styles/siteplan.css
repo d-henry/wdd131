@@ -1,6 +1,7 @@
 :root {
     --dark: #1F2937; /* Header, Footer, Headings*/
     --bg: #FAF8F5; /* Page Background */
+    --sectionbg: whitesmoke;
     --accent: #B8470A; /* Accents, Buttons, Links */
     --text: #374151; /* Paragraph text */
     --font: "Space Grotesk", sans-serif;
@@ -79,7 +80,7 @@ main {
 }
 
 section {
-    background: whitesmoke;
+    background: var(--sectionbg);
     padding: 1rem 1.5rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
