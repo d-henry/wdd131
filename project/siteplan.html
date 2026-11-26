@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Extruding Plastic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo-4-build-plate.svg"
+            alt="Extruding Plastic : The History and Commercialization of 3D Printing">
+        <p>WEBSITE PLANNING DOCUMENT</p>
+        <h1>Extruding Plastic : The History and Commercialization of 3D Printing</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Extruding Plastic: The History and Commercialization of 3D Printing - </strong> I think this is a
+                clever name for the site, considering it will be a brief overview of the history of 3d printing and it's
+                Commercialization.</p>
+            <p>Possible domain: <span id="to-highlight">
+                    extrudinghistory.org
+                </span></p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The site is an entryway for those looking to learn more about 3D printing. How it came to be where it is
+                now, and how it all got started. There is also a newsletter signup form to keep up to date on the latest
+                technological developments in 3D printing.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>I want to learn more about the history of 3d printing.</li>
+                <li>How did 3d printers become so ubiquitous?</li>
+                <li>Where is 3d printing technology at now?</li>
+                <li>What are the practical uses of owning a 3d printer?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+            <p><span class="swatch dark"></span><strong>#1F2937</strong> Header, footer, headings</p>
+            <p><span class="swatch bg"></span><strong>#FAF8F5</strong> Page Background</p>
+            <p><span class="swatch accent"></span><strong>#B8470A</strong> Accents, buttons, links</p>
+            <p><span class="swatch text"></span><strong>#374151</strong> Paragraph text</p>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>I plan to use the google font "Space Grotesk" I went through a bunch of fonts and think this one looks
+                cool, techy, and kind of matches the vibe i'm going for. I'm going to keep things simple and just use
+                the one font for everything.</p>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            <p>There will be four pages</p>
+            <ul>
+                <li>
+                    <h3>Home page</h3>
+                    <p>Hero with the site title and a one-sentence pitch</p>
+                    <p>Three cards linking to the other pages</p>
+                    <p>Small JS touch: a random "3D printing fact" pulled from an array of objects, which when clicked
+                        shows another fact. bit of an almost easter egg.</p>
+                </li>
+
+                <li>
+                    <h3>Timeline</h3>
+                    <p>8-12 key technology milestones</p>
+                    <p>timeline will be built with JS from an array of objects year, title, description, image,
+                        category.
+                        using template literals.</p>
+                    <p>filter buttons by technology or era? filter(), event listeners, or conditionals, not sure yet.
+                    </p>
+                    <p>lazy-load all the images, give them a fade-in or something.</p>
+                </li>
+
+                <li>
+                    <h3>Patents and Today</h3>
+                    <p>Why the 2009 FDM patent expiration opened the door to cheap hobby printers</p>
+                    <p>Todays commercial landscape, consumer vs industrial, major uses like rapid prototyping, medical,
+                        and
+                        aerospace.</p>
+                    <p>Mostly Content here to balance a lot of the JS on other pages.</p>
+                </li>
+
+                <li>
+                    <h3>Print Estimator</h3>
+                    <p>I'm going to port in a version of my CSE111 project that estimated print costs</p>
+                    <p>Form inputs: model weight in grams, spool price and weight in grams, print hours, electricity
+                        cost /
+                        kwh</p>
+                    <p>shows a cost breakdown and saves past estimates to localStorage with a "clear History"</p>
+                    <p>this covers my form, localStorage, objects, and array methods and conditionals requirements in a
+                        single page.</p>
+                </li>
+
+                <li>
+                    <h3>Wireframes for Home page</h3>
+                    <div class="wireframes">
+                        <img src="./images/desktop-wireframe.webp" alt="Desktop Wireframe for the Home page">
+                        <img src="./images/mobile-wireframe.webp" alt="Mobile Wireframe for the Home page">
+                    </div>
+                    <p>I know I know only two wireframes... It's my first time using figma and i SUCK at it. Those took me FOREVER!</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>©
+            <span id="currentyear"></span>
+            Dylan Henry, Utah, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Build plate badge</title>
+  <rect x="24" y="24" width="152" height="152" rx="22" fill="#1F2937"/>
+  <!-- print bed grid -->
+  <g stroke="#374151" stroke-width="2">
+    <line x1="54" y1="30" x2="54" y2="170"/>
+    <line x1="84" y1="30" x2="84" y2="170"/>
+    <line x1="116" y1="30" x2="116" y2="170"/>
+    <line x1="146" y1="30" x2="146" y2="170"/>
+    <line x1="30" y1="54" x2="170" y2="54"/>
+    <line x1="30" y1="84" x2="170" y2="84"/>
+    <line x1="30" y1="116" x2="170" y2="116"/>
+    <line x1="30" y1="146" x2="170" y2="146"/>
+  </g>
+  <!-- printed cube with visible layer lines -->
+  <polygon points="100,60 136,80 100,100 64,80" fill="#F79A5B"/>
+  <polygon points="64,80 100,100 100,142 64,122" fill="#F26B1D"/>
+  <polygon points="136,80 100,100 100,142 136,122" fill="#C4520F"/>
+  <g stroke="#1F2937" stroke-opacity="0.35" stroke-width="1.5">
+    <line x1="64" y1="90" x2="100" y2="110"/>
+    <line x1="64" y1="100" x2="100" y2="120"/>
+    <line x1="64" y1="110" x2="100" y2="130"/>
+    <line x1="136" y1="90" x2="100" y2="110"/>
+    <line x1="136" y1="100" x2="100" y2="120"/>
+    <line x1="136" y1="110" x2="100" y2="130"/>
+  </g>
+</svg>
