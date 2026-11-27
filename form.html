@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Submit a product review with a rating, installation date, useful features, and written feedback.">
+    <meta name="author" content="Dylan Henry">
+    <title>Product Review | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form class="card" action="review.html" method="get">
+            <!-- All My Fields Go here -->
+            <div class="field">
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
+            </div>
+
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+                <div class="rating-options">
+                    <div class="rating-option">
+                        <label for="rating1"><span aria-hidden="true">&starf;</span><span class="sr-only">1 star</span></label>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating2"><span aria-hidden="true">&starf;&starf;</span><span class="sr-only">2 stars</span></label>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating3"><span aria-hidden="true">&starf;&starf;&starf;</span><span class="sr-only">3 stars</span></label>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating4"><span aria-hidden="true">&starf;&starf;&starf;&starf;</span><span class="sr-only">4 stars</span></label>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating5"><span aria-hidden="true">&starf;&starf;&starf;&starf;&starf;</span><span class="sr-only">5 stars</span></label>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="installdate">Date of Installation</label>
+                <input type="date" id="installdate" name="installdate" required>
+            </div>
+
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product? <span class="hint">(Check all that apply)</span></legend>
+                <div class="check">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="easeofuse" name="features" value="ease of use">
+                    <label for="easeofuse">Ease of Use</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label> 
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="review">Written Review <span class="hint">(Optional)</span></label>
+                <textarea name="review" id="review" rows="5"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="username">Your Name <span class="hint">(Optional)</span></label>
+                <input type="text" name="username" id="username" autocomplete="name">
+            </div>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+
+    </main>
+    
+    <footer>
+<p>©
+        <span id="currentyear"></span>
+        Dylan Henry, Utah, USA
+    </p>
+    <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
