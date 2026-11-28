@@ -1,0 +1,83 @@
+:root {
+  --dark: #1F2937; /* Header, Footer, Headings */
+  --bg: #FAF8F5; /* Page Background */
+  --sectionbg: whitesmoke;
+  --accent: #B8470A; /* Accents, Buttons, Links */
+  --text: #374151; /* Paragraph text */
+  --headfoottext: white;
+  --font: "Space Grotesk", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5rem;
+}
+
+header,
+footer {
+    background: var(--dark);
+    color: var(--headfoottext);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+main {
+    padding: 1.5rem 0.75rem;
+}
+
+.card {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background: var(--sectionbg);
+    border: 1px solid var(--dark);
+    border-radius: 8px;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.field {
+    display: grid;
+    gap: 0.4rem;
+}
+
+label,
+legend {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.hint {
+    font-weight: 400;
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    margin-bottom: 0.5rem;
+    padding: 0;
+}
