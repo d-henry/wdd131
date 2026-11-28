@@ -206,3 +206,9 @@ input[type="submit"]:hover {
     }
 }
 
+.field:has(:required) > label::after,
+fieldset:has(:required) > legend::after {
+    content: " *";
+    color: var(--accent);
+}
+
